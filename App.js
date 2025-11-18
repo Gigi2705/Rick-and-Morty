@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
 import CharactersListScreen from './screens/CharactersListScreen';
 import CharacterDetailScreen from './screens/CharacterDetailScreen';
 
@@ -13,12 +14,12 @@ export default function App() {
         <Stack.Screen
           name="CharactersList"
           component={CharactersListScreen}
-          options={{ title: 'Rick and Morty' }}
+          options={{ title: 'Personagens' }}
         />
         <Stack.Screen
-          name="Details"
+          name="CharacterDetail"
           component={CharacterDetailScreen}
-          options={{ title: 'Character Details' }}
+          options={{ title: 'Detalhes' }}
         />
       </Stack.Navigator>
     </NavigationContainer>
